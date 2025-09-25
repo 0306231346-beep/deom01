@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- React 19 -->
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+<body>
+   <script>
+    const h1=React.createElement('h1',null,"hoc react");
+    const rootElement = document.getElementById("root");
+      // API mới của React 18
+      const root = ReactDOM.createRoot(rootElement);
+      root.render(
+        React.createElement("h1", null, "Hello React 18!")
+      );
+   </script>
+</body>
+</html>
